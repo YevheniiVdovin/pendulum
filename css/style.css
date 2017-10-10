@@ -1,0 +1,61 @@
+
+}
+
+@keyframes rotate {
+  
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(45deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+@keyframes rotate1 {
+  
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(-45deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.block1 {
+    animation: rotate linear infinite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: reverse;
+    transform-origin: 100px -100px;
+}
+
+.block5 {
+    animation: rotate1 linear infinite;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: reverse;
+    transform-origin: 0px -100px;
+    position: absolute;
+}
+
+.position .circle {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid #272727;
+    border-radius: 50%;
+    display: inline-block;
+    
+    
+}
+
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 0px;
+}
